@@ -707,9 +707,9 @@
                 Content="AC"
                 Foreground="Black"
                 FontSize="16"
-                FontFamily="Minimalust"
+                FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="10,220,178,272" RenderTransformOrigin="0.518,0.5">
+                Click="Button_Click" Margin="12,220,178,272" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -735,6 +735,8 @@
                 </Button.Template>
 
             </Button>
+
+
             <Button x:Name="button1_Copy17"
                 Background="AntiqueWhite"
                 BorderBrush="Black"
