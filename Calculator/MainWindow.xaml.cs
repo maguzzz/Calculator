@@ -59,8 +59,12 @@ namespace Calculator
             //Chcking wich button got pressed
             switch (buttonValue)
             {
-                case "del":
-                    userInput.Remove(userInput.Length - 1);
+                case "DL":
+                    //Removeing the last char of the User input
+                    userInput = userInput.Remove(userInput.Length - 1);
+                    break;
+                case "AC":
+                    userInput = "";
                     break;
                 case "%":
                     userInput += "%";
@@ -113,13 +117,20 @@ namespace Calculator
                 case ".":
                     userInput += ".";
                     break;
+                case "^":
+                    userInput += "^";
+                    break;
                 case "=":
 
                     //Adding a plus after the last value so it can be a  calculation
                     if (userInput.EndsWith("+") || userInput.EndsWith("-") || userInput.EndsWith("*") || userInput.EndsWith("/") || userInput.EndsWith("%")) userInput = userInput.Remove(userInput.Length - 1);
 
+                    lastUserInput = userInput;
                     //Convertin it to a calculation
                     userInput = Convert.ToString(new System.Data.DataTable().Compute(userInput, ""));
+
+                    if (userInput.Length > 0) LastUseInput.Text = lastUserInput + " = " + userInput;
+
                     break;
 
                 default:
