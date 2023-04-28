@@ -44,18 +44,29 @@ namespace Calculator
             Application.Current.Shutdown();
         }
 
+
         string userInput = "";
         string lastUserInput;
+        bool nextClickClear = false;
 
         //Calculator
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            //Clearing the Error message if its displayed
+            if (nextClickClear == true)
+            {
+                userInput = "";
+                nextClickClear = false;
+
+            }
+
             // Get the value of the clicked butto
             var clickedButton = sender as Button;
 
             // Puting the value into a string
             string buttonValue = Convert.ToString(clickedButton.Content);
-
+            
             //Chcking wich button got pressed
             switch (buttonValue)
             {
@@ -118,21 +129,29 @@ namespace Calculator
                     userInput += ".";
                     break;
                 case "^":
-                    userInput += "^";
+                    userInput += "";
                     break;
                 case "=":
-
                     //Adding a plus after the last value so it can be a  calculation
                     if (userInput.Length > 0 && (userInput.EndsWith("+") || userInput.EndsWith("-") || userInput.EndsWith("*") || userInput.EndsWith("/") || userInput.EndsWith("%"))) userInput = userInput.Remove(userInput.Length - 1);
 
+                    //Saveing Last user input
                     lastUserInput = userInput;
-                    //Convertin it to a calculation
-                    userInput = Convert.ToString(new System.Data.DataTable().Compute(userInput, ""));
 
-                    if (userInput.Length > 0) LastUseInput.Text = lastUserInput + " = " + userInput;
+                    try
+                    {
+                        //Convertin it to a calculation
+                        userInput = Convert.ToString(new System.Data.DataTable().Compute(userInput, ""));
+                        if (userInput.Length > 0) LastUseInput.Text = lastUserInput + " = " + userInput;
+                    }
+                    catch (Exception)
+                    {
+                        //If the Conversion fails it will output an Error Message
+                        userInput = "ERROR";
+                        nextClickClear = true;
+                    }
 
                     break;
-
                 default:
                     userInput = "ERROR";
                     break;
