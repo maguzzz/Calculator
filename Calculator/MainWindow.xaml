@@ -249,7 +249,7 @@
                 Background="AntiqueWhite"
                 BorderBrush="Black"
                 BorderThickness="3"
-                Content="&lt;&gt;"
+                Content="%"
                 Foreground="Black"
                 FontSize="16"
                 FontFamily="Minimalust"

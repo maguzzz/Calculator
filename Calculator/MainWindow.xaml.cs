@@ -60,7 +60,7 @@ namespace Calculator
             switch (buttonValue)
             {
                 case "del":
-                    //Delete - 1
+                    userInput.Remove(userInput.Length - 1);
                     break;
                 case "%":
                     userInput += "%";
@@ -116,12 +116,12 @@ namespace Calculator
                 case "=":
 
                     //Adding a plus after the last value so it can be a  calculation
-                    userInput += "0";
+                    if (userInput.EndsWith("+") || userInput.EndsWith("-") || userInput.EndsWith("*") || userInput.EndsWith("/") || userInput.EndsWith("%")) userInput = userInput.Remove(userInput.Length - 1);
 
                     //Convertin it to a calculation
                     userInput = Convert.ToString(new System.Data.DataTable().Compute(userInput, ""));
-
                     break;
+
                 default:
                     userInput = "ERROR";
                     break;
