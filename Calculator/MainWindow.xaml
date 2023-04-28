@@ -109,7 +109,7 @@
                     FontSize="16"
                     FontFamily="Minimalust"
                     Cursor="Hand"
-                    Click="Button_Click" Margin="10,425,178,67" RenderTransformOrigin="0.518,0.5">
+                    Click="Button_Click" Margin="10,418,178,74" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="Button">
@@ -148,7 +148,7 @@
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
-                Click="Button_Click" Margin="6,423,13,69" RenderTransformOrigin="0.518,0.5" Grid.Column="1" Grid.ColumnSpan="3">
+                Click="Button_Click" Margin="241,418,22,74" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -183,7 +183,7 @@
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="89,425,99,67" RenderTransformOrigin="0.518,0.5">
+                Click="Button_Click" Margin="89,418,99,74" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -218,7 +218,7 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="160,425,28,67" RenderTransformOrigin="0.518,0.5">
+                Click="Button_Click" Margin="160,418,28,74" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -245,6 +245,426 @@
 
             </Button>
             <TextBox x:Name="OutputText" HorizontalAlignment="Center" Height="64" Margin="0,107,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
+            <Button x:Name="button1_Copy3"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="&lt;&gt;"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Minimalust"
+                Cursor="Hand"
+                Click="Button_Click" Margin="10,482,178,10" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy4"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="4"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Minimalust"
+                Cursor="Hand"
+                Click="Button_Click" Margin="10,352,178,140" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy5"
+                Background="#EB6440"
+                BorderBrush="#EB6440"
+                BorderThickness="3"
+                Content="-"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Impact"
+                Cursor="Hand"
+                Click="Button_Click" Margin="241,352,22,140" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#EB6440"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#EB6440"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="50" Height="50"
+                            CornerRadius="45"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy6"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="5"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Monserrat"
+                Cursor="Hand"
+                Click="Button_Click" Margin="89,352,99,140" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy7"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="6"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Minimalust"
+                Cursor="Hand"
+                Click="Button_Click" Margin="160,352,28,140" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy8"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="7"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Minimalust"
+                Cursor="Hand"
+                Click="Button_Click" Margin="10,285,178,207" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy9"
+                Background="#EB6440"
+                BorderBrush="#EB6440"
+                BorderThickness="3"
+                Content="x"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Impact"
+                Cursor="Hand"
+                Click="Button_Click" Margin="242,285,21,207" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#EB6440"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#EB6440"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="50" Height="50"
+                            CornerRadius="45"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy10"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="8"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Monserrat"
+                Cursor="Hand"
+                Click="Button_Click" Margin="90,285,98,207" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy11"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="9"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Minimalust"
+                Cursor="Hand"
+                Click="Button_Click" Margin="160,285,28,207" RenderTransformOrigin="0.536,-0.212">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy12"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="0"
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Monserrat"
+                Cursor="Hand"
+                Click="Button_Click" Margin="88,482,100,10" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy13"
+                Background="AntiqueWhite"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Content="."
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Minimalust"
+                Cursor="Hand"
+                Click="Button_Click" Margin="160,482,28,10" RenderTransformOrigin="0.518,0.5">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Black"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="18" Height="18"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="button1_Copy14"
+                Background="#EB6440"
+                BorderBrush="#EB6440"
+                BorderThickness="3"
+                Content="="
+                Foreground="Black"
+                FontSize="16"
+                FontFamily="Impact"
+                Cursor="Hand"
+                Click="Button_Click" Margin="241,482,22,10" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#EB6440"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#EB6440"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="50" Height="50"
+                            CornerRadius="45"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
 
 
 
