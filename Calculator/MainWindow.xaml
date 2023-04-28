@@ -109,7 +109,7 @@
                     FontSize="16"
                     FontFamily="Minimalust"
                     Cursor="Hand"
-                    Click="btnClose_Click" Margin="10,425,178,67" RenderTransformOrigin="0.518,0.5">
+                    Click="Button_Click" Margin="10,425,178,67" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="Button">
@@ -148,7 +148,7 @@
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
-                Click="btnClose_Click" Margin="6,423,13,69" RenderTransformOrigin="0.518,0.5" Grid.Column="1" Grid.ColumnSpan="3">
+                Click="Button_Click" Margin="6,423,13,69" RenderTransformOrigin="0.518,0.5" Grid.Column="1" Grid.ColumnSpan="3">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -183,7 +183,7 @@
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="btnClose_Click" Margin="89,425,99,67" RenderTransformOrigin="0.518,0.5">
+                Click="Button_Click" Margin="89,425,99,67" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -218,7 +218,7 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="btnClose_Click" Margin="160,425,28,67" RenderTransformOrigin="0.518,0.5">
+                Click="Button_Click" Margin="160,425,28,67" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
