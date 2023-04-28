@@ -459,7 +459,7 @@
                 Background="#EB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
-                Content="x"
+                Content="*"
                 Foreground="Black"
                 FontSize="16"
                 FontFamily="Impact"
