@@ -806,8 +806,8 @@
 
             </Button>
             <TextBox x:Name="LastUseInput" HorizontalAlignment="Left" Height="85" Margin="2,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" Grid.ColumnSpan="4" TextAlignment="Right" Background="#e1d3c1" BorderThickness="0" FontSize="20"/>
-            <TextBox x:Name="OutputText" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="24" Background="#e1d3c1" Margin="2,43,0,0" BorderThickness="0"/>
-            <TextBox x:Name="Time" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="22" Background="#e1d3c1" Margin="2,26,0,0" BorderThickness="0"/>
+            <TextBox x:Name="OutputText" HorizontalAlignment="Left" Height="59" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="24" Background="#e1d3c1" Margin="2,57,0,0" BorderThickness="0"/>
+            <TextBox x:Name="Time" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="22" Background="#e1d3c1" Margin="2,26,0,0" BorderThickness="0"/>
 
 
 
