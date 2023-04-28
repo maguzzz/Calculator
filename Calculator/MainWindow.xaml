@@ -244,12 +244,12 @@
                 </Button.Template>
 
             </Button>
-            <TextBox x:Name="OutputText" HorizontalAlignment="Left" Height="64" Margin="10,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
+            <TextBox x:Name="OutputText" HorizontalAlignment="Left" Height="50" Margin="10,66,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="287" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="22"/>
             <Button x:Name="button1_Copy3"
                 Background="AntiqueWhite"
                 BorderBrush="Black"
                 BorderThickness="3"
-                Content="%"
+                Content="&lt;&gt;"
                 Foreground="Black"
                 FontSize="16"
                 FontFamily="Minimalust"
@@ -459,7 +459,7 @@
                 Background="#EB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
-                Content="x"
+                Content="*"
                 Foreground="Black"
                 FontSize="16"
                 FontFamily="Impact"
@@ -669,7 +669,7 @@
                 Background="#EB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
-                Content="*"
+                Content="/"
                 Foreground="Black"
                 FontSize="16"
                 FontFamily="Impact"
@@ -739,12 +739,12 @@
                 Background="AntiqueWhite"
                 BorderBrush="Black"
                 BorderThickness="3"
-                Content="8"
+                Content="DL"
                 Foreground="Black"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="90,220,98,272" RenderTransformOrigin="0.518,0.5">
+                Click="Button_Click" Margin="90,220,100,272" RenderTransformOrigin="0.518,0.5">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -805,9 +805,7 @@
                 </Button.Template>
 
             </Button>
-            <Border BorderThickness="0" CornerRadius="50,50,0,0" BorderBrush="AntiqueWhite">
-                <Rectangle Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="326" Margin="-6,215,0,0" Stroke="AntiqueWhite" VerticalAlignment="Top" Width="315"/>
-            </Border>
+            <TextBox x:Name="LastUseInput" HorizontalAlignment="Left" Height="27" Margin="10,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="287" Grid.ColumnSpan="4" TextAlignment="Right"/>
 
 
 
