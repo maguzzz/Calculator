@@ -12,12 +12,13 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
 
-    <Border CornerRadius="50"
+    <Border CornerRadius="20"
             Background="AntiqueWhite"
             
             >
-            
-        </Border>
+        <Button Content="Button" HorizontalAlignment="Left" Height="41" Margin="48,557,0,0" VerticalAlignment="Top" Width="50"/>
+
+    </Border>
 
 
 
