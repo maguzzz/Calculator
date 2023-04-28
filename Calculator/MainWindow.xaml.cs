@@ -108,10 +108,10 @@ namespace Calculator
                     userInput += "?";
                     break;
                 case "0":
-                    userInput += "=";
+                    userInput += "0";
                     break;
                 case ".":
-                    userInput += ":";
+                    userInput += ".";
                     break;
                 case "=":
 
