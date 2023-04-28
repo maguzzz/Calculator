@@ -44,7 +44,7 @@ namespace Calculator
             Application.Current.Shutdown();
         }
 
-        string userInput;
+        string userInput = "";
         string lastUserInput;
 
         //Calculator
@@ -61,7 +61,7 @@ namespace Calculator
             {
                 case "DL":
                     //Removeing the last char of the User input
-                    userInput = userInput.Remove(userInput.Length - 1);
+                    if(userInput.Length >= 1) userInput = userInput.Remove(userInput.Length - 1);
                     break;
                 case "AC":
                     userInput = "";
@@ -123,7 +123,7 @@ namespace Calculator
                 case "=":
 
                     //Adding a plus after the last value so it can be a  calculation
-                    if (userInput.EndsWith("+") || userInput.EndsWith("-") || userInput.EndsWith("*") || userInput.EndsWith("/") || userInput.EndsWith("%")) userInput = userInput.Remove(userInput.Length - 1);
+                    if (userInput.Length > 0 && (userInput.EndsWith("+") || userInput.EndsWith("-") || userInput.EndsWith("*") || userInput.EndsWith("/") || userInput.EndsWith("%"))) userInput = userInput.Remove(userInput.Length - 1);
 
                     lastUserInput = userInput;
                     //Convertin it to a calculation
