@@ -140,7 +140,7 @@
 
 
             <Button x:Name="button1_Copy"
-                Background="#FF7D756B"
+                Background="#FFEB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="+"
@@ -316,7 +316,7 @@
 
             </Button>
             <Button x:Name="button1_Copy5"
-                Background="#FF7D756B"
+                Background="#FFEB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="-"
@@ -456,7 +456,7 @@
 
             </Button>
             <Button x:Name="button1_Copy9"
-                Background="#FF7D756B"
+                Background="#FFEB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="*"
@@ -631,7 +631,7 @@
 
             </Button>
             <Button x:Name="button1_Copy14"
-                Background="#FF7D756B"
+                Background="#FFEB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="="
@@ -666,7 +666,7 @@
 
             </Button>
             <Button x:Name="button1_Copy15"
-                Background="#FF7D756B"
+                Background="#FFEB6440"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="/"
