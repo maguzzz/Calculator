@@ -244,6 +244,7 @@
                 </Button.Template>
 
             </Button>
+            <TextBox x:Name="OutputText" HorizontalAlignment="Center" Height="64" Margin="0,107,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
 
 
 
