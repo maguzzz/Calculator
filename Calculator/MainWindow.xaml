@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1280">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="850" Width="450"
+        Background="Transparent"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+
+    <Border CornerRadius="50"
+            Background="AntiqueWhite"
+            
+            >
+            
+        </Border>
+
+
+
 </Window>
