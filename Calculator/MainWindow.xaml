@@ -140,7 +140,7 @@
 
 
             <Button x:Name="button1_Copy"
-                Background="#EB6440"
+                Background="#FF7D756B"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="+"
@@ -316,7 +316,7 @@
 
             </Button>
             <Button x:Name="button1_Copy5"
-                Background="#EB6440"
+                Background="#FF7D756B"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="-"
@@ -456,7 +456,7 @@
 
             </Button>
             <Button x:Name="button1_Copy9"
-                Background="#EB6440"
+                Background="#FF7D756B"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="*"
@@ -631,7 +631,7 @@
 
             </Button>
             <Button x:Name="button1_Copy14"
-                Background="#EB6440"
+                Background="#FF7D756B"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="="
@@ -666,7 +666,7 @@
 
             </Button>
             <Button x:Name="button1_Copy15"
-                Background="#EB6440"
+                Background="#FF7D756B"
                 BorderBrush="#EB6440"
                 BorderThickness="3"
                 Content="/"
@@ -701,15 +701,13 @@
 
             </Button>
             <Button x:Name="button1_Copy16"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
                 BorderThickness="3"
                 Content="AC"
-                Foreground="Black"
+                Foreground="#FF4B4640"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="12,220,178,272" RenderTransformOrigin="0.518,0.5">
+                Click="Button_Click" Margin="12,220,178,272" RenderTransformOrigin="0.518,0.5" Background="AntiqueWhite" BorderBrush="Black">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -742,7 +740,7 @@
                 BorderBrush="Black"
                 BorderThickness="3"
                 Content="DL"
-                Foreground="Black"
+                Foreground="#FF4B4640"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
@@ -777,7 +775,7 @@
                 BorderBrush="Black"
                 BorderThickness="3"
                 Content="%"
-                Foreground="Black"
+                Foreground="#FF4B4640"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
