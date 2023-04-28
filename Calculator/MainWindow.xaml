@@ -35,10 +35,28 @@
                     Grid.Column="1"
                     Click="btnMinimize_Click" Margin="0,0,0,525">
             </Button>
+            <Button x:Name="btnClose"
+                    Background="AntiqueWhite"
+                    BorderThickness="0"
+                    Content="-"
+                    Foreground="Black"
+                    FontSize="16"
+                    FontFamily="Monserrat"
+                    Cursor="Hand"
+                    Grid.Column="2"
+                    Click="btnClose_Click" Margin="0,0,0,525">
+            </Button>
+
+
+
+
+
+
             <TextBlock x:Name="OutputText" HorizontalAlignment="Left" Height="35" Margin="86,159,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="137"/>
             <Button Content="1" HorizontalAlignment="Left" Height="32" Margin="50,313,0,0" VerticalAlignment="Top" Width="72" Click="Button_Click"/>
             <Button Content="2" HorizontalAlignment="Left" Height="32" Margin="50,350,0,0" VerticalAlignment="Top" Width="72" Click="Button_Click"/>
             <Button Content="+" HorizontalAlignment="Left" Height="32" Margin="50,387,0,0" VerticalAlignment="Top" Width="72" Click="Button_Click"/>
+            <Button Content="=" HorizontalAlignment="Left" Height="32" Margin="50,424,0,0" VerticalAlignment="Top" Width="72" Click="Button_Click"/>
 
 
 

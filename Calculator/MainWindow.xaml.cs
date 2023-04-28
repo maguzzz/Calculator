@@ -30,6 +30,11 @@ namespace Calculator
             WindowState = WindowState.Minimized;
         }
 
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
