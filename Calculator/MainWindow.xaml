@@ -14,7 +14,7 @@
         Mouse.MouseDown="Window_MouseDown">
 
     <Border CornerRadius="20"
-            Background="AntiqueWhite">
+            Background="{DynamicResource MainColor}">
         <Grid Margin="-5,0,-14,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -27,7 +27,7 @@
                     Background="#968d81"
                     BorderThickness="0"
                     Content=""
-                    Foreground="Black"
+                    Foreground="{DynamicResource Text}"
                     FontSize="16"
                     FontFamily="Monserrat"
                     Cursor="Hand"
@@ -65,7 +65,7 @@
                     Background="#4b4640"
                     BorderThickness="0"
                     Content=""
-                    Foreground="Black"
+                    Foreground="{DynamicResource Text}"
                     FontSize="16"
                     FontFamily="Monserrat"
                     Cursor="Hand"
@@ -99,11 +99,11 @@
 
 
             <Button x:Name="button1"
-                    Background="AntiqueWhite"
-                    BorderBrush="Black"
+                    Background="{DynamicResource MainColor}"
+                    BorderBrush="{DynamicResource Text}"
                     BorderThickness="3"
                     Content="1"
-                    Foreground="Black"
+                    Foreground="{DynamicResource Text}"
                     FontSize="16"
                     FontFamily="Minimalust"
                     Cursor="Hand"
@@ -111,10 +111,10 @@
 
                 <Button.Style>
                     <Style TargetType="Button">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -138,11 +138,11 @@
 
 
             <Button x:Name="button1_Copy"
-                Background="#FFEB6440"
-                BorderBrush="#EB6440"
+                Background="{DynamicResource AccentColor}"
+                BorderBrush="{DynamicResource AccentColor}"
                 BorderThickness="3"
                 Content="+"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
@@ -150,10 +150,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="#EB6440"/>
+                        <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#EB6440"/>
+                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -173,11 +173,11 @@
 
             </Button>
             <Button x:Name="button1_Copy1"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="2"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
@@ -185,10 +185,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -208,11 +208,11 @@
 
             </Button>
             <Button x:Name="button1_Copy2"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="3"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
@@ -220,10 +220,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -244,22 +244,22 @@
             </Button>
 
             <Button x:Name="button1_Copy3"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="^"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="10,482,178,10" RenderTransformOrigin="0.518,0.5">
+                Click="ButtonTheme" Margin="10,482,178,10" RenderTransformOrigin="0.5,0.5">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -279,11 +279,11 @@
 
             </Button>
             <Button x:Name="button1_Copy4"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="4"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
@@ -291,10 +291,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -314,11 +314,11 @@
 
             </Button>
             <Button x:Name="button1_Copy5"
-                Background="#FFEB6440"
-                BorderBrush="#EB6440"
+                Background="{DynamicResource AccentColor}"
+                BorderBrush="{DynamicResource AccentColor}"
                 BorderThickness="3"
                 Content="-"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
@@ -326,10 +326,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="#EB6440"/>
+                        <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#EB6440"/>
+                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -349,11 +349,11 @@
 
             </Button>
             <Button x:Name="button1_Copy6"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="5"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
@@ -361,10 +361,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -384,11 +384,11 @@
 
             </Button>
             <Button x:Name="button1_Copy7"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="6"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
@@ -396,10 +396,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -419,11 +419,11 @@
 
             </Button>
             <Button x:Name="button1_Copy8"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="7"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
@@ -431,10 +431,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -454,11 +454,11 @@
 
             </Button>
             <Button x:Name="button1_Copy9"
-                Background="#FFEB6440"
-                BorderBrush="#EB6440"
+                Background="{DynamicResource AccentColor}"
+                BorderBrush="{DynamicResource AccentColor}"
                 BorderThickness="3"
                 Content="*"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
@@ -466,10 +466,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="#EB6440"/>
+                        <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#EB6440"/>
+                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -489,11 +489,11 @@
 
             </Button>
             <Button x:Name="button1_Copy10"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="8"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
@@ -501,10 +501,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -524,11 +524,11 @@
 
             </Button>
             <Button x:Name="button1_Copy11"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="9"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
@@ -536,10 +536,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -559,11 +559,11 @@
 
             </Button>
             <Button x:Name="button1_Copy12"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="0"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
@@ -571,10 +571,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -594,11 +594,11 @@
 
             </Button>
             <Button x:Name="button1_Copy13"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="."
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
@@ -606,10 +606,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -629,11 +629,11 @@
 
             </Button>
             <Button x:Name="button1_Copy14"
-                Background="#FFEB6440"
-                BorderBrush="#EB6440"
+                Background="{DynamicResource AccentColor}"
+                BorderBrush="{DynamicResource AccentColor}"
                 BorderThickness="3"
                 Content="="
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
@@ -641,10 +641,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="#EB6440"/>
+                        <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#EB6440"/>
+                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -664,11 +664,11 @@
 
             </Button>
             <Button x:Name="button1_Copy15"
-                Background="#FFEB6440"
-                BorderBrush="#EB6440"
+                Background="{DynamicResource AccentColor}"
+                BorderBrush="{DynamicResource AccentColor}"
                 BorderThickness="3"
                 Content="/"
-                Foreground="Black"
+                Foreground="{DynamicResource Text}"
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
@@ -676,10 +676,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="#EB6440"/>
+                        <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#EB6440"/>
+                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -701,18 +701,18 @@
             <Button x:Name="button1_Copy16"
                 BorderThickness="3"
                 Content="AC"
-                Foreground="#FF4B4640"
+                Foreground="{DynamicResource AccentText}"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="12,220,178,272" RenderTransformOrigin="0.518,0.5" Background="AntiqueWhite" BorderBrush="Black">
+                Click="Button_Click" Margin="12,220,178,272" RenderTransformOrigin="0.518,0.5" Background="{DynamicResource MainColor}" BorderBrush="{DynamicResource Text}">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -734,11 +734,11 @@
 
 
             <Button x:Name="button1_Copy17"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="DL"
-                Foreground="#FF4B4640"
+                Foreground="{DynamicResource AccentText}"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
@@ -746,10 +746,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -769,11 +769,11 @@
 
             </Button>
             <Button x:Name="button1_Copy18"
-                Background="AntiqueWhite"
-                BorderBrush="Black"
+                Background="{DynamicResource MainColor}"
+                BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="%"
-                Foreground="#FF4B4640"
+                Foreground="{DynamicResource AccentText}"
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
@@ -781,10 +781,10 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Background" Value="{DynamicResource Text}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Background" Value="{DynamicResource Text}"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -803,9 +803,9 @@
                 </Button.Template>
 
             </Button>
-            <TextBlock x:Name="LastUseInput" HorizontalAlignment="Left" Height="85" Margin="5,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" FontSize="22" TextAlignment="Right" Background="#e1d3c1"/>
-            <TextBlock x:Name="OutputText" HorizontalAlignment="Left" Height="59" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="24" Background="#e1d3c1" Margin="5,57,0,0"/>
-            <TextBlock x:Name="Time" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" TextAlignment="Left" FontSize="22" Background="#e1d3c1" Margin="5,26,0,0"/>
+            <TextBlock x:Name="LastUseInput" HorizontalAlignment="Left" Height="85" Margin="5,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" FontSize="22" TextAlignment="Right" Background="{DynamicResource SecondColor}"/>
+            <TextBlock x:Name="OutputText" HorizontalAlignment="Left" Height="59" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="24" Background="{DynamicResource SecondColor}" Margin="5,57,0,0"/>
+            <TextBlock x:Name="Time" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" TextAlignment="Left" FontSize="22" Background="{DynamicResource SecondColor}" Margin="5,26,0,0"/>
 
 
 

@@ -66,13 +66,13 @@ namespace Calculator
 
             // Puting the value into a string
             string buttonValue = Convert.ToString(clickedButton.Content);
-            
+
             //Chcking wich button got pressed
             switch (buttonValue)
             {
                 case "DL":
                     //Removeing the last char of the User input
-                    if(userInput.Length >= 1) userInput = userInput.Remove(userInput.Length - 1);
+                    if (userInput.Length >= 1) userInput = userInput.Remove(userInput.Length - 1);
                     break;
                 case "AC":
                     userInput = "";
@@ -128,9 +128,6 @@ namespace Calculator
                 case ".":
                     userInput += ".";
                     break;
-                case "^":
-                    userInput += "";
-                    break;
                 case "=":
                     //Adding a plus after the last value so it can be a  calculation
                     if (userInput.Length > 0 && (userInput.EndsWith("+") || userInput.EndsWith("-") || userInput.EndsWith("*") || userInput.EndsWith("/") || userInput.EndsWith("%"))) userInput = userInput.Remove(userInput.Length - 1);
@@ -159,6 +156,22 @@ namespace Calculator
             }
             // Displaying the Text on the UI
             OutputText.Text = userInput;
+        }
+
+        //Theme Switch
+        private int currentThemeIndex = 0;
+
+        //List with all themese
+        List<Uri> themes = new List<Uri>
+        {
+            new Uri("Themes/LightTheme.xaml", UriKind.Relative),
+            new Uri("Themes/DarkTheme.xaml", UriKind.Relative),
+        };
+
+        private void ButtonTheme(object sender, RoutedEventArgs e)
+        {
+            currentThemeIndex = (currentThemeIndex + 1) % themes.Count;
+            AppTheme.ChangeTheme(themes[currentThemeIndex]);
         }
     }
 }
