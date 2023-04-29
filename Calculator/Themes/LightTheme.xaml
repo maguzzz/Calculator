@@ -6,5 +6,7 @@
     <SolidColorBrush Color="#FFEB6440" x:Key="AccentColor"/>
     <SolidColorBrush Color="Black" x:Key="Text"/>
     <SolidColorBrush Color="#FF4B4640" x:Key="AccentText"/>
+    <SolidColorBrush Color="#968d81" x:Key="MinButton"/>
+    <SolidColorBrush Color="#4b4640" x:Key="CloseButton"/>
 
 </ResourceDictionary>

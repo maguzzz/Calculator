@@ -24,7 +24,7 @@
             </Grid.ColumnDefinitions>
 
             <Button x:Name="btnMinimize"
-                    Background="#968d81"
+                    Background="{DynamicResource MinButton}"
                     BorderThickness="0"
                     Content=""
                     Foreground="{DynamicResource Text}"
@@ -62,7 +62,7 @@
 
 
             <Button x:Name="btnClose"
-                    Background="#4b4640"
+                    Background="{DynamicResource CloseButton}"
                     BorderThickness="0"
                     Content=""
                     Foreground="{DynamicResource Text}"
