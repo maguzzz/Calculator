@@ -6,7 +6,7 @@
     <SolidColorBrush Color="#7AA5D2" x:Key="AccentColor"/>
     <SolidColorBrush Color="Black" x:Key="Text"/>
     <SolidColorBrush Color="White" x:Key="AccentText"/>
-    <SolidColorBrush Color="Red" x:Key="MinButton"/>
-    <SolidColorBrush Color="RosyBrown" x:Key="CloseButton"/>
+    <SolidColorBrush Color="#EEEEEE" x:Key="MinButton"/>
+    <SolidColorBrush Color="#94b7db" x:Key="CloseButton"/>
 
 </ResourceDictionary>
