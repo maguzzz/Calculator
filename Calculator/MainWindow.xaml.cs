@@ -26,6 +26,7 @@ namespace Calculator
         }
         //This is a commend
 
+        //Drags the whole Window from any place
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -34,11 +35,13 @@ namespace Calculator
             }
         }
 
+        //Minimizes the Window
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
 
+        //Closes the Window
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
@@ -166,12 +169,18 @@ namespace Calculator
         {
             new Uri("Themes/LightTheme.xaml", UriKind.Relative),
             new Uri("Themes/DarkTheme.xaml", UriKind.Relative),
+            new Uri("Themes/BleachTheme.xaml", UriKind.Relative),
         };
 
         private void ButtonTheme(object sender, RoutedEventArgs e)
         {
             currentThemeIndex = (currentThemeIndex + 1) % themes.Count;
             AppTheme.ChangeTheme(themes[currentThemeIndex]);
+        }
+
+        private void Time_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
         }
     }
 }
