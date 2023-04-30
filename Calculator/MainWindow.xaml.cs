@@ -140,8 +140,8 @@ namespace Calculator
 
                     try
                     {
-                        //Convertin it to a calculation
-                        userInput = Convert.ToString(new System.Data.DataTable().Compute(userInput, ""));
+                        //Convertin it to a Double roudning it and Conveting it to a calculation
+                        userInput = Convert.ToString(Math.Round( Convert.ToDouble(new System.Data.DataTable().Compute(userInput, "")),5));
                         if (userInput.Length > 0) LastUseInput.Text = lastUserInput + " = " + userInput;
                     }
                     catch (Exception)
