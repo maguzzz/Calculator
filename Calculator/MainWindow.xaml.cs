@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +56,8 @@ namespace Calculator
         //Calculator
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Turning the typ Convertion to Englisch so there are no bugs
+            CultureInfo englishCulture = new CultureInfo("en-US");
 
             //Clearing the Error message if its displayed
             if (nextClickClear == true)
@@ -141,7 +144,7 @@ namespace Calculator
                     try
                     {
                         //Convertin it to a Double roudning it and Conveting it to a calculation
-                        userInput = Convert.ToString(Math.Round( Convert.ToDouble(new System.Data.DataTable().Compute(userInput, "")),5));
+                        userInput = Convert.ToString(Math.Round( Convert.ToDouble(new System.Data.DataTable().Compute(userInput, "")),5), englishCulture);
                         if (userInput.Length > 0) LastUseInput.Text = lastUserInput + " = " + userInput;
                     }
                     catch (Exception)

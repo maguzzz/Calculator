@@ -107,14 +107,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="hollow mask.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ichcigo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Themes\Pictures\ok.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
