@@ -5,7 +5,7 @@
     <SolidColorBrush Color= "#ffffff" x:Key="SecondColor"/>
     <SolidColorBrush Color="#f9ae5c" x:Key="AccentColor"/>
     <SolidColorBrush Color="Black" x:Key="Text"/>
-    <SolidColorBrush Color="White" x:Key="AccentText"/>
+    <SolidColorBrush Color="Black" x:Key="AccentText"/>
     <SolidColorBrush Color="#EEEEEE" x:Key="MinButton"/>
     <SolidColorBrush Color="#e4812f" x:Key="CloseButton"/>
 
