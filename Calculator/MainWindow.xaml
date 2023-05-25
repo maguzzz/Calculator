@@ -13,6 +13,8 @@
         WindowStartupLocation="CenterScreen"
         Mouse.MouseDown="Window_MouseDown">
 
+
+
     <Border CornerRadius="20"
             Background="{DynamicResource MainColor}">
         <Grid Margin="-5,0,-14,0">
@@ -99,7 +101,7 @@
 
 
             <Button x:Name="button1"
-                    Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                     BorderBrush="{DynamicResource Text}"
                     BorderThickness="3"
                     Content="1"
@@ -107,31 +109,55 @@
                     FontSize="16"
                     FontFamily="Minimalust"
                     Cursor="Hand"
-                    Click="Button_Click" Margin="10,418,178,74" RenderTransformOrigin="0.518,0.5">
-
+                    Click="Button_Click" Margin="17,418,171,74" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
                 </Button.Style>
 
                 <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Width="18" Height="18"
-                                CornerRadius="9"
-                                Background="{TemplateBinding Background}">
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="Auto" Height="Auto"
+                            CornerRadius="9"
+                            Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
-                                              HorizontalAlignment="Center"/>
+                                HorizontalAlignment="Center"/>
 
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
 
 
@@ -146,14 +172,38 @@
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
-                Click="Button_Click" Margin="241,418,22,74" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
+                Click="Button_Click" Margin="238,418,0,74" Width="56" Height="58" Grid.ColumnSpan="3">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -161,8 +211,8 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="50" Height="50"
-                            CornerRadius="45"
+                        <Border Width="Auto" Height="Auto"
+                            CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
                                 HorizontalAlignment="Center"/>
@@ -173,7 +223,7 @@
 
             </Button>
             <Button x:Name="button1_Copy1"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="2"
@@ -181,14 +231,39 @@
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="89,418,99,74" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="89,418,99,74" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -196,7 +271,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -205,10 +280,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy2"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="3"
@@ -216,14 +291,39 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="160,418,28,74" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="160,418,28,74" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -231,7 +331,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -240,11 +340,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
 
             <Button x:Name="button1_Copy3"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="^"
@@ -252,14 +351,39 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="ButtonTheme" Margin="10,482,178,10" RenderTransformOrigin="0.5,0.5">
-
+                Click="ButtonTheme" Margin="17,482,171,10" RenderTransformOrigin="0.5,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -267,7 +391,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -276,10 +400,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy4"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="4"
@@ -287,14 +411,39 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="10,352,178,140" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="17,352,171,140" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -302,7 +451,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -311,8 +460,8 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy5"
                 Background="{DynamicResource AccentColor}"
                 BorderBrush="{DynamicResource AccentColor}"
@@ -322,14 +471,40 @@
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
-                Click="Button_Click" Margin="241,352,22,140" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
+                Click="Button_Click" Margin="238,352,0,140" 
+                Grid.ColumnSpan="3"
+                    Width="56" Height="58">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -337,8 +512,8 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="50" Height="50"
-                            CornerRadius="45"
+                        <Border Width="Auto" Height="Auto"
+                            CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
                                 HorizontalAlignment="Center"/>
@@ -349,7 +524,7 @@
 
             </Button>
             <Button x:Name="button1_Copy6"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="5"
@@ -357,14 +532,39 @@
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="89,352,99,140" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="89,352,99,140" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -372,7 +572,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -381,10 +581,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy7"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="6"
@@ -392,14 +592,39 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="160,352,28,140" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="160,352,28,140" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -407,7 +632,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -416,25 +641,51 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy8"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
-                BorderThickness="3"
+                BorderThickness="0"
                 Content="7"
                 Foreground="{DynamicResource Text}"
                 FontSize="16"
+                
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="10,285,178,207" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="17,285,171,207" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -442,7 +693,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -451,8 +702,8 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy9"
                 Background="{DynamicResource AccentColor}"
                 BorderBrush="{DynamicResource AccentColor}"
@@ -462,14 +713,38 @@
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
-                Click="Button_Click" Margin="242,285,21,207" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
-
+                Click="Button_Click" Margin="238,285,0,207" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="3"
+                Width="56" Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -477,8 +752,8 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="50" Height="50"
-                            CornerRadius="45"
+                        <Border Width="Auto" Height="Auto"
+                            CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
                                 HorizontalAlignment="Center"/>
@@ -489,7 +764,7 @@
 
             </Button>
             <Button x:Name="button1_Copy10"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="8"
@@ -497,14 +772,39 @@
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="90,285,98,207" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="90,285,98,207" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -512,7 +812,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -521,10 +821,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy11"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="9"
@@ -532,14 +832,39 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="160,285,28,207" RenderTransformOrigin="0.536,-0.212">
-
+                Click="Button_Click" Margin="160,285,28,207" RenderTransformOrigin="0.536,-0.212"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -547,7 +872,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -556,10 +881,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy12"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="0"
@@ -567,14 +892,39 @@
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="88,482,100,10" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="88,482,100,10" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -582,7 +932,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -591,10 +941,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy13"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="."
@@ -602,14 +952,39 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="160,482,28,10" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="160,482,28,10" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -617,7 +992,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -626,8 +1001,8 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy14"
                 Background="{DynamicResource AccentColor}"
                 BorderBrush="{DynamicResource AccentColor}"
@@ -637,14 +1012,38 @@
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
-                Click="Button_Click" Margin="241,482,22,10" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
+                Click="Button_Click" Margin="238,482,0,10" Width="56" Height="58" Grid.ColumnSpan="3">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -652,8 +1051,8 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="50" Height="50"
-                            CornerRadius="45"
+                        <Border Width="Auto" Height="Auto"
+                            CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
                                 HorizontalAlignment="Center"/>
@@ -672,14 +1071,38 @@
                 FontSize="16"
                 FontFamily="Impact"
                 Cursor="Hand"
-                Click="Button_Click" Margin="242,218,21,274" RenderTransformOrigin="0.518,0.5" Grid.ColumnSpan="4">
+                Click="Button_Click" Margin="238,220,0,272" Width="56" Height="58" Grid.ColumnSpan="3">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -687,8 +1110,8 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="50" Height="50"
-                            CornerRadius="45"
+                        <Border Width="Auto" Height="Auto"
+                            CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
                                 HorizontalAlignment="Center"/>
@@ -699,20 +1122,47 @@
 
             </Button>
             <Button x:Name="button1_Copy16"
+                Background="{DynamicResource SecondColor}"
                 BorderThickness="3"
                 Content="AC"
                 Foreground="{DynamicResource AccentText}"
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="12,220,178,272" RenderTransformOrigin="0.518,0.5" Background="{DynamicResource MainColor}" BorderBrush="{DynamicResource Text}">
-
+                Click="Button_Click" Margin="17,220,171,272" RenderTransformOrigin="0.518,0.5"
+                BorderBrush="{DynamicResource Text}"
+                    Width="56"
+                    Height="58" AutomationProperties.IsOffscreenBehavior="Onscreen">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -720,7 +1170,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -729,12 +1179,11 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
 
 
             <Button x:Name="button1_Copy17"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="DL"
@@ -742,14 +1191,39 @@
                 FontSize="16"
                 FontFamily="Monserrat"
                 Cursor="Hand"
-                Click="Button_Click" Margin="90,220,100,272" RenderTransformOrigin="0.518,0.5">
-
+                Click="Button_Click" Margin="90,220,98,272" RenderTransformOrigin="0.518,0.5"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -757,7 +1231,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -766,10 +1240,10 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
             <Button x:Name="button1_Copy18"
-                Background="{DynamicResource MainColor}"
+                Background="{DynamicResource SecondColor}"
                 BorderBrush="{DynamicResource Text}"
                 BorderThickness="3"
                 Content="%"
@@ -777,14 +1251,39 @@
                 FontSize="16"
                 FontFamily="Minimalust"
                 Cursor="Hand"
-                Click="Button_Click" Margin="160,220,28,272" RenderTransformOrigin="0.536,-0.212">
-
+                Click="Button_Click" Margin="160,220,28,272" RenderTransformOrigin="0.536,-0.212"
+                    Width="56"
+                    Height="58">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="{DynamicResource Text}"/>
+                        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="{DynamicResource Text}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="54" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="56" Duration="0:0:0.3">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <CircleEase/>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Width" To="56" Duration="0:0:0.3"/>
+                                            <DoubleAnimation  Storyboard.TargetProperty="Height" To="58" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -792,7 +1291,7 @@
 
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Width="18" Height="18"
+                        <Border Width="Auto" Height="Auto"
                             CornerRadius="9"
                             Background="{TemplateBinding Background}">
                             <ContentPresenter VerticalAlignment="Center"
@@ -801,8 +1300,9 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-
             </Button>
+
+
             <TextBlock x:Name="LastUseInput" HorizontalAlignment="Left" Height="81" Margin="5,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" FontSize="22" TextAlignment="Right" Background="{DynamicResource SecondColor}"/>
             <TextBlock x:Name="OutputText" HorizontalAlignment="Left" Height="49" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="24" Background="{DynamicResource SecondColor}" Margin="5,71,0,0"/>
             <TextBlock x:Name="Time" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextAlignment="Left" FontSize="22" Background="{DynamicResource SecondColor}" Margin="5,31,0,0" Grid.ColumnSpan="4"/>
