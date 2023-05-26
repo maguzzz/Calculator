@@ -8,5 +8,6 @@
     <SolidColorBrush Color="Black" x:Key="AccentText"/>
     <SolidColorBrush Color="#EEEEEE" x:Key="MinButton"/>
     <SolidColorBrush Color="#e4812f" x:Key="CloseButton"/>
+    <SolidColorBrush Color="Black" x:Key="OutputText"/>
 
 </ResourceDictionary>

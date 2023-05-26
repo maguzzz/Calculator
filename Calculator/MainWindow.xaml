@@ -1303,9 +1303,10 @@
             </Button>
 
 
-            <TextBlock x:Name="LastUseInput" HorizontalAlignment="Left" Height="81" Margin="5,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" FontSize="22" TextAlignment="Right" Background="{DynamicResource SecondColor}"/>
-            <TextBlock x:Name="OutputText" HorizontalAlignment="Left" Height="49" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="24" Background="{DynamicResource SecondColor}" Margin="5,71,0,0"/>
+            <TextBlock x:Name="LastUseInput" Foreground="{DynamicResource OutputText}" HorizontalAlignment="Left" Height="81" Margin="5,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" Grid.ColumnSpan="3" FontSize="22" TextAlignment="Right" Background="{DynamicResource SecondColor}"/>
+            <TextBlock x:Name="OutputText" HorizontalAlignment="Left" Height="49" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" Grid.ColumnSpan="3" TextAlignment="Right" FontSize="24" Foreground="{DynamicResource OutputText}" Background="{DynamicResource SecondColor}" Margin="5,71,0,0"/>
             <TextBlock x:Name="Time" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextAlignment="Left" FontSize="22" Background="{DynamicResource SecondColor}" Margin="5,31,0,0" Grid.ColumnSpan="4"/>
+            <TextBlock x:Name="Time_Copy" HorizontalAlignment="Left" Height="130" TextWrapping="Wrap" VerticalAlignment="Top" Width="11" TextAlignment="Left" FontSize="22" Background="{DynamicResource SecondColor}" Margin="0,71,0,0" Grid.Column="3"/>
 
 
 
