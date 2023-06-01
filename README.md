@@ -14,4 +14,4 @@
 
 <h2>Themes</h2>
 
-![Themes](https://user-images.githubusercontent.com/65002100/235350264-1c2d910c-8b17-47c1-885b-6802cb5659cf.png)
+![Screenshot 2023-06-01 155535 (1)](https://github.com/maguzzz/Calculator/assets/128125744/9cf531bf-e15b-4c57-b1e1-98019e6e2e04)
