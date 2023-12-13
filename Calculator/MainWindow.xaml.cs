@@ -72,6 +72,12 @@ namespace Calculator
 
             // Puting the value into a string
             string buttonValue = Convert.ToString(clickedButton.Content);
+            char LastInputChar = '?';
+
+            if (userInput.Length > 1)
+            {
+               LastInputChar = Convert.ToChar(userInput[userInput.Length - 1]);
+            }
 
             //Chcking wich button got pressed
             switch (buttonValue)
@@ -87,7 +93,10 @@ namespace Calculator
                     userInput += "%";
                     break;
                 case "/":
-                    userInput += "/";
+                    if (LastInputChar != '*' && LastInputChar != '%')
+                    {
+                        userInput += "/";
+                    }
                     break;
                 case "7":
                     userInput += "7";
@@ -99,7 +108,10 @@ namespace Calculator
                     userInput += "9";
                     break;
                 case "*":
-                    userInput += "*";
+                    if (LastInputChar != '/' && LastInputChar != '%')
+                    {
+                        userInput += "*";
+                    }
                     break;
                 case "4":
                     userInput += "4";
